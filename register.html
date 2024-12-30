@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+
+    <!-- Font Awesone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+      <div class="col">
+        <div class="content">
+          <div class="content-header">
+            <img class="logo" src="img/chillx.png" alt="chill">
+            <h1>Daftar</h1>
+            <h3>Selamat datang</h3>
+          </div>
+          <form id="form-login">
+            <div class="content-body">
+              <div class="input-group">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-input" id="username" name="username" placeholder="Masukkan username">  
+              </div>
+              <div class="input-group">
+                <label for="password" class="form-label" id="form-label-password">Kata Sandi</label>
+                <div class="password-group">
+                  <input type="password" class="form-input" id="password" name="password" placeholder="Masukkan kata sandi">
+                  <button id="btnShowPassword" type="button"><img src="img/eye-off.svg" alt="eye"></button>
+                </div>
+                <label for="password" class="form-label" id="form-label-password">Konfirmasi Kata Sandi</label>
+                <div class="password-group">
+                  <input type="password" class="form-input" id="password" name="password" placeholder="Masukkan kata sandi">
+                  <button id="btnShowPassword" type="button"><img src="img/eye-off.svg" alt="eye"></button>
+                </div>
+              </div>
+              <div class="account">
+                <p class="daftar">Sudah Punya Akun?<a href="#" class="link-daftar">Masuk</a></p>
+                <a href="#" class="forget">Lupa Kata Sandi?</a>
+              </div>
+            </div>
+            <div class="content-footer">
+              <button id="btnLogin" type="submit">Daftar</button>
+            </div>
+          </form>
+
+          <div class="line">Atau</div>
+
+            <div class="google">
+              <a href="" id="btnGoogle">
+                <img src="img/Google.svg" alt="Google Logo">Masuk dengan Google
+              </a>
+            </div>
+        </div>
+      </div>
+    </div>
+  
+      <script src=""></script>
+</body>
+</html>

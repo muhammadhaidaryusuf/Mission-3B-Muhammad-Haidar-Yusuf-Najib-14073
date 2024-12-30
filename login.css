@@ -1,0 +1,198 @@
+:root {
+  --color-primary: #080808;
+  --color-secondary: #18181d;
+  --color-secondary-light: #202026;
+  --color-secondary-verylight: #181a1c;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(img/bioskop\ figma.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: none;
+  height: 100vh;
+  background-color: var(--color-secondary-light);
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+  margin-top: 110px;
+  width: 375px;
+  height: 415px;
+  border: 2px solid var(--color-secondary-light);
+  border-radius: 15px;
+  background-color: rgba(24, 26, 28, 0.72);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.content-header {
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.content-header h1 {
+  font-size: 1.55rem;
+}
+
+.content-header h3 {
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+
+.logo {
+  width: 75px;
+  height: 40px;
+  margin-bottom: 0.5rem;
+}
+
+.input-group,
+.content-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.content-body {
+  position: relative;
+}
+
+#form-label-password,
+.input-group {
+  margin-top: 0.3rem;
+}
+
+.form-label {
+  color: #fff;
+  margin-left: 0.1rem;
+  font-size: 0.9rem;
+}
+
+.form-input {
+  width: 100%;
+  background-color: rgba(24, 26, 28, 0.12);
+  color: rgba(231, 227, 252, 1);
+  border: 1px solid rgba(231, 227, 252, 0.23);
+  padding: 0.45rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+}
+
+.input-group {
+  position: relative;
+}
+
+#btnShowPassword {
+  position: absolute;
+  bottom: 3.35px;
+  right: 10px;
+  background-color: rgba(24, 26, 28, 0.12);
+  border: none;
+  mix-blend-mode: lighten;
+}
+
+.account {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.account a {
+  margin-bottom: 6px;
+}
+
+.daftar {
+  text-align: left;
+  font-size: 0.7rem;
+  color: rgba(231, 227, 252, 0.55);
+}
+
+.link-daftar {
+  color: rgba(231, 227, 252, 1);
+  text-decoration: none;
+}
+
+.forget {
+  margin-top: 0.5rem;
+  text-align: right;
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.content-footer {
+  margin-top: 1rem;
+}
+
+#btnLogin {
+  width: 100%;
+  background-color: rgba(61, 65, 66, 1);
+  color: #fff;
+  padding: 0.45rem 5.5rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+#btnLogin:hover {
+  opacity: 0.9;
+}
+
+.line {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 0.5rem auto;
+}
+
+#btnGoogle {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  gap: 1rem;
+  font-size: 0.8rem;
+  padding: 0.45rem 5.5rem;
+  border-radius: 1rem;
+  background-color: rgba(231, 227, 252, 0.01);
+}
+
+#btnGoogle img {
+  width: 1.1rem;
+  background-color: rgba(231, 227, 252, 0.01);
+  mix-blend-mode: lighten;
+}
+
+@media (max-width: 991px) {
+  body {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .container {
+    margin-top: -10px;
+  }
+}
